@@ -1,0 +1,419 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent-container{
+    width: 100%;
+}
+/* navbar */
+.navbar{
+   padding: 0px 10px;
+   width: 100%; 
+   background-color: #444;
+   display: flex;
+   justify-content: space-between;
+   height: 60px;
+   position: fixed;
+}
+.navbar div{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    height: 100%;
+}
+
+.navbar .nav-child-left img{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-size: 13px;
+    height: 100%;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    color: rgb(253, 252, 252);
+    font-family: sans-serif;
+    letter-spacing: 2px;
+ }
+ .navbar a:hover{
+    background-color: rgb(209, 209, 209);
+ }
+ .navbar a i{
+    font-size: 17px;
+    letter-spacing: 5px;
+}
+
+
+ .navbar .nav-child-right img{
+    width: 140px;
+    height: 80%;
+    padding: 5px;
+ }
+
+ .navbar .nav-child-right a i {
+margin: 0px 5px;
+font-size: 13px;
+ }
+ .navbar .nav-child-right a i .fa-bars{
+    font-size: 20px;
+}
+
+/* <!-- end nav bar --> */
+/* start bannar */
+
+main{
+    min-height: 100vh;
+    background-image: url("hero-33cc6eb8f1a98f8aacf154a4ff4c5f76d5610553e8ba4accb6d22515a64a184a.jpg");
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+main h3, .servies h3{
+    font-size: 45px;
+    text-align: center;
+
+}
+main p{
+    font-size: 30px;
+    margin: 20px 500px;
+}
+main .parent-search{
+position: relative;
+
+}
+
+main input{
+    width: 650px;
+    height: 65px;
+    padding: 5px 15px;
+    border: none;
+    font-size: 20px;
+    outline: none;
+}
+main button{
+    width:80px ;
+    height: 80%;
+    border: none;
+    background-color: #35ee44;
+    font-size: 18px;
+    color: aliceblue;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+}
+ /* end main  */
+/* servies start  */
+
+.servies{
+    min-height: 35vh;
+    padding: 30px;
+    width: 100%;
+}
+
+.servies h3{
+text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.servies .parent-servies{
+margin-top: 50px;
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+
+}
+.servies .parent-servies .servies{
+    width: 23%;
+    height: 200px;
+    /* background-image: url(1.jpg); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100% 100% ;
+    margin: 15px auto;
+    position: relative;
+}
+.servies .parent-servies .servies::after{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity:0.4 ;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+
+.servies .parent-servies  .servies-one{
+    background-image: url(1.jpg);
+}
+.servies .parent-servies .servies-tow{
+    background-image: url(2.jpg);
+
+}
+.servies .parent-servies .servies-there{
+    background-image: url(3.jpg);
+
+}
+.servies .parent-servies  .servies-four{
+    background-image: url(4.jpg);
+
+}
+.servies .parent-servies  .servies-five{
+    background-image: url(5.jpg);
+
+}
+.servies .parent-servies  .servies-six{   
+     background-image: url(6.jpg);
+}
+.servies .parent-servies  .servies-seven{
+    background-image: url(7.jpg);
+
+}
+.servies .parent-servies .servies-eight{
+    background-image: url(8.jpg);
+
+}
+
+    .servies .parent-servies .servies p{
+        font-size:40px; 
+        color: aliceblue;
+        z-index:2;
+}
+
+/* servies end  */
+/* -- all servies start -- */
+
+.all-servies{
+    width: 100%;
+    padding: 50px  70px 100px;
+    background-color: rgb(197, 202, 199);
+
+}
+
+.all-servies .section-tree-servies{
+width: 100%;
+margin:20px 0px ;
+
+}
+
+.all-servies .section-tree-servies .title{
+    width: 100%;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0px 5px;
+    font-size: 40px;
+    font-weight: 500px;
+}
+.all-servies .section-tree-servies .title a{
+    padding: 5px 10px;
+    font-size: 22px;
+    text-decoration: none;
+    border: 2px solid rgb(64, 32, 245);
+    color:#232523;
+    background-color: #35111121;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.all-servies .section-tree-servies .title a:hover{
+    background-color: #706464;
+    color: rgb(202, 184, 184);
+}
+.all-servies .section-tree-servies .items{
+    width: 100% ;
+    display: flex;
+    justify-content:center;
+    align-items: center ;
+
+
+}
+
+.all-servies .section-tree-servies .items .grrb{
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-direction: column;
+    direction: rtl;
+}
+
+.all-servies .section-tree-servies .title p{
+    padding: 0px 10px;
+    font-size: 40 px;
+    text-decoration: none;
+    color:#021404;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.all-servies .section-tree-servies .items .items{
+   width: 23%;
+    margin: 10px auto;
+    height:330px;
+    flex-direction: column;
+}
+.all-servies .section-tree-servies .items .items .grrb .tarhil{
+    position: relative;
+    margin-right: 35px;
+    z-index: 2;
+}
+
+.all-servies .section-tree-servies .items .items a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-weight: 400px;
+}
+
+.all-servies .section-tree-servies .items .items img {
+    width:100% ;
+    max-height: 60%;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 2;
+    margin: 30px;
+}
+
+
+.all-servies .section-tree-servies .items .items .stars{
+    color: rgb(177, 168, 75);
+    font-size: small;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+}
+.all-servies .section-tree-servies .items .items p{
+    font-size: 15px;
+    color: #777777;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.all-servies .section-tree-servies .items .items p:hover{
+    color: aqua;
+}
+
+.all-servies .section-tree-servies .items .items .price{
+
+    font-size: 14px;
+    font-weight: 700;
+
+}
+
+
+
+/* <!-- ------------------------------------------------- --> */
+
+.word{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(226, 228, 226);
+    width: 100%px;
+    padding:50px 70px 20px;
+ } 
+.hre{
+width: 25%;
+direction: rtl;
+}
+.hre a{   
+    text-decoration: none;
+    font-size: larger;
+    color: #08b433;
+}
+ .word .hre  ul li{
+    list-style-type: none;
+    margin: 10px 0px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.word .hre ul li  i {
+    font-size: 45px;
+    padding: 44x;
+    margin: 10px;
+}
+
+
+
+/* <!-- ------------------------------------------------- --> */
+
+
+/* <!-- ------------------------------------------------- --> */
+.buttombar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: rgb(197, 202, 199);
+    height: 70px;
+    padding: 0px 40px;
+    width: 100%; 
+    color:rgb(236, 29, 29) ;
+}
+
+.buttombar .buttom-right a{
+    font-size: 20px;
+    text-decoration: none;
+    width: 100%;
+    color:rgb(11, 9, 17) ;
+padding: 0px  10px;
+}
+/* <!-- ------------------------------------------------- --> */
+/* <!-- logo-end -- start--> */
+.logo-end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* <!-- logo-end -- end--> */
+/* <!-- ------------------------------------------------- --> */
+/* <!-- end -- start--> */
+
+.section-end , .section-endd  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 0px 5px;
+    list-style-type: none;
+    direction: rtl;
+}
+.section-end ul li   , .section-endd ul li {
+    list-style-type: none;
+
+}
+
+.section-endd {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px 0px;
+
+}
+.section-endd ul{
+    padding: 0px 80px;
+}
+ .lii{
+    font-size: 20px;
+    font-weight: 800px
+}
+.liii{
+    font-size: 17px;
+    font-weight: 500px
+  
+}
